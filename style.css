@@ -1,0 +1,182 @@
+/* Загальні стилі */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка */
+.header {
+  background: linear-gradient(90deg, #ffcc00, #ff8800);
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  color: #121212;
+  font-weight: bold;
+}
+
+/* Контейнер */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Блоки */
+.block {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+}
+
+.block-title {
+  color: #ffcc00;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.text {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Списки */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  margin: 8px 0;
+  padding: 8px;
+  background: #2a2a2a;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.list-item:hover {
+  background: #3a3a3a;
+}
+
+/* Медальки */
+.medals-list .list-item {
+  font-size: 16px;
+}
+
+/* Футер */
+.footer {
+  background: #333;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+.teams {
+  max-width: 500px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.team {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.3);
+}
+
+.team-name {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  background: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.team-name:hover {
+  background: #ffcc00;
+  color: #121212;
+}
+
+.players {
+  display: none;
+  margin: 0;
+  padding: 10px 15px;
+  background: #2a2a2a;
+}
+
+.players li {
+  color: #ffcc00;
+  margin: 5px 0;
+  font-size: 15px;
+}
+.fraggers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fragger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #2a2a2a;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.fragger:hover {
+  background: #3a3a3a;
+}
+
+.fragger-rank {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 36px;
+  color: #555;
+}
+
+.fragger-rank.gold   { color: #ffcc00; }
+.fragger-rank.silver { color: #aaa; }
+.fragger-rank.bronze { color: #cd7f32; }
+
+.fragger-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fragger-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.fragger-team {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.fragger-rating {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc00;
+}

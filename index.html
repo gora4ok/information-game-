@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter-Strike</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Counter-Strike</h1>
+  </header>
+
+  <main class="container">
+    <section class="block info">
+      <h2 class="block-title">Інформація</h2>
+      <p class="text">
+        Counter-Strike — культова серія командних шутерів від першої особи, яка з’явилася як модифікація для Half-Life у 1999 році. 
+        Гравці діляться на терористів та спецназ, виконують завдання або знищують суперників. 
+        Гра стала основою кіберспорту і має величезну фан-базу по всьому світу.
+      </p>
+    </section>
+
+    <section class="block teams">
+      <div class="teams">
+  <div class="team">
+    <button class="team-name">Natus Vincere (NaVi)</button>
+    <ul class="players">
+      <li>s1mple</li>
+      <li>b1t</li>
+      <li>electroNic</li>
+      <li>Perfecto</li>
+      <li>iM</li>
+    </ul>
+  </div>
+
+  <div class="team">
+    <button class="team-name">FaZe Clan</button>
+    <ul class="players">
+      <li>karrigan</li>
+      <li>ropz</li>
+      <li>broky</li>
+      <li>rain</li>
+      <li>frozen</li>
+    </ul>
+  </div>
+
+  <div class="team">
+    <button class="team-name">G2 Esports</button>
+    <ul class="players">
+      <li>NiKo</li>
+      <li>huNter-</li>
+      <li>m0NESY</li>
+      <li>nexa</li>
+      <li>HooXi</li>
+    </ul>
+  </div>
+
+  <div class="team">
+    <button class="team-name">Team Vitality</button>
+    <ul class="players">
+      <li>ZywOo</li>
+      <li>apEX</li>
+      <li>Spinx</li>
+      <li>flameZ</li>
+      <li>mezii</li>
+    </ul>
+  </div>
+
+  <div class="team">
+    <button class="team-name">MOUZ</button>
+    <ul class="players">
+      <li>siuhy</li>
+      <li>frozen</li>
+      <li>xertion</li>
+      <li>torzsi</li>
+      <li>Jimpphat</li>
+    </ul>
+  </div>
+</div>
+
+    </section>
+
+    <section class="block medals">
+      <h2 class="block-title">Медальки</h2>
+      <ul class="list medals-list">
+        <li class="list-item">🏆 Major Champion</li>
+        <li class="list-item">⭐ MVP Tournament</li>
+        <li class="list-item">🔫 Top Fragger</li>
+        <section class="block fraggers">
+  <h2 class="block-title">Топ Фрагери</h2>
+  <div class="fraggers-list">
+
+    <div class="fragger">
+      <span class="fragger-rank gold">#1</span>
+      <div class="fragger-info">
+        <span class="fragger-name">ZywOo 👑</span>
+        <span class="fragger-team">Team Vitality</span>
+      </div>
+      <span class="fragger-rating">1.25</span>
+    </div>
+
+    <div class="fragger">
+      <span class="fragger-rank silver">#2</span>
+      <div class="fragger-info">
+        <span class="fragger-name">m0NESY</span>
+        <span class="fragger-team">G2 Esports</span>
+      </div>
+      <span class="fragger-rating">1.24</span>
+    </div>
+
+    <div class="fragger">
+      <span class="fragger-rank bronze">#3</span>
+      <div class="fragger-info">
+        <span class="fragger-name">NiKo</span>
+        <span class="fragger-team">FaZe Clan</span>
+      </div>
+      <span class="fragger-rating">1.14</span>
+    </div>
+
+    <div class="fragger">
+      <span class="fragger-rank">#4</span>
+      <div class="fragger-info">
+        <span class="fragger-name">ropz</span>
+        <span class="fragger-team">FaZe Clan</span>
+      </div>
+      <span class="fragger-rating">1.10</span>
+    </div>
+
+    <div class="fragger">
+      <span class="fragger-rank">#5</span>
+      <div class="fragger-info">
+        <span class="fragger-name">b1t</span>
+        <span class="fragger-team">Natus Vincere</span>
+      </div>
+      <span class="fragger-rating">1.07</span>
+    </div>
+
+  </div>
+</section>
+        <li class="list-item">🛡️ Best Support</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-text">© 2026 Counter-Strike Fan Page</p>
+  </footer>
+
+
+
+
+</body>
+<script>
+  document.querySelectorAll('.team-name').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const players = btn.nextElementSibling;
+      const isOpen = players.style.display === 'block';
+      
+      document.querySelectorAll('.players').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.team-name').forEach(b => {
+        b.style.background = '#444';
+        b.style.color = '#fff';
+      });
+      
+      if (!isOpen) {
+        players.style.display = 'block';
+        btn.style.background = '#ffcc00';
+        btn.style.color = '#121212';
+      }
+    });
+  });
+</script>
+</html>
+
