@@ -3,85 +3,91 @@ const teams = {
     name: "Natus Vincere", flag: "🇺🇦", country: "Україна", founded: 2009,
     firstCaptain: "Zeus (Данило Тесленко)",
     currentCaptain: "Aleksib (Aleksi Віролайнен)",
+    top: 152,
+    title:"Navi",
     medals: [
       { icon: "🏆", label: "Major Champion × 3", type: "gold" },
-      { icon: "⭐", label: "BLAST Premier 2021",  type: "gold" },
-      { icon: "🥈", label: "IEM Finals 2022",     type: "silver" },
+      { icon: "⭐", label: "BLAST Premier 2021", type: "gold" },
+      { icon: "🥈", label: "IEM Finals 2022", type: "silver" },
     ],
     players: [
-      { nick: "s1mple",     flag: "🇺🇦", role: "AWPer",   rating: "1.31" },
-      { nick: "b1t",        flag: "🇺🇦", role: "Rifler",  rating: "1.18" },
-      { nick: "electroNic", flag: "🇷🇺", role: "Rifler",  rating: "1.10" },
-      { nick: "Aleksib",    flag: "🇫🇮", role: "IGL",     rating: "1.02" },
-      { nick: "npl",        flag: "🇺🇦", role: "Support", rating: "1.05" },
+      { nick: "s1mple", flag: "🇺🇦", role: "AWPer", rating: "1.31" },
+      { nick: "b1t", flag: "🇺🇦", role: "Rifler", rating: "1.18" },
+      { nick: "electroNic", flag: "🇷🇺", role: "Rifler", rating: "1.10" },
+      { nick: "Aleksib", flag: "🇫🇮", role: "IGL", rating: "1.02" },
+      { nick: "npl", flag: "🇺🇦", role: "Support", rating: "1.05" },
     ]
   },
   faze: {
     name: "FaZe Clan", flag: "🌍", country: "США / Міжнародна", founded: 2010,
     firstCaptain: "karrigan (Фінн Андерсен)",
     currentCaptain: "Twistzz (Russel Van Dulken)",
+    top: 42,
     medals: [
       { icon: "🏆", label: "IEM Katowice 2022", type: "gold" },
-      { icon: "🏆", label: "NAVI Major 2022",   type: "gold" },
+      { icon: "🏆", label: "NAVI Major 2022", type: "gold" },
       { icon: "🥉", label: "BLAST Spring 2023", type: "bronze" },
     ],
     players: [
-      { nick: "broky",   flag: "🇸🇰", role: "AWPer",  rating: "1.22" },
-      { nick: "rain",    flag: "🇳🇴", role: "Rifler", rating: "1.14" },
+      { nick: "broky", flag: "🇸🇰", role: "AWPer", rating: "1.22" },
+      { nick: "rain", flag: "🇳🇴", role: "Rifler", rating: "1.14" },
       { nick: "Twistzz", flag: "🇨🇦", role: "Rifler", rating: "1.19" },
-      { nick: "karrigan",flag: "🇩🇰", role: "IGL",    rating: "1.06" },
-      { nick: "ropz",    flag: "🇪🇪", role: "Lurker", rating: "1.20" },
+      { nick: "karrigan", flag: "🇩🇰", role: "IGL", rating: "1.06" },
+      { nick: "ropz", flag: "🇪🇪", role: "Lurker", rating: "1.20" },
     ]
   },
   g2: {
     name: "G2 Esports", flag: "🇩🇪", country: "Німеччина / Іспанія", founded: 2014,
     firstCaptain: "Ex6TenZ (Кевін Друланс)",
     currentCaptain: "HooXi (Расмус Нільсен)",
+    top: 47,
     medals: [
-      { icon: "🏆", label: "IEM Cologne 2023",  type: "gold" },
-      { icon: "⭐", label: "MVP ZywOo 2023",     type: "gold" },
-      { icon: "🥈", label: "Paris Major 2023",   type: "silver" },
+      { icon: "🏆", label: "IEM Cologne 2023", type: "gold" },
+      { icon: "⭐", label: "MVP ZywOo 2023", type: "gold" },
+      { icon: "🥈", label: "Paris Major 2023", type: "silver" },
     ],
     players: [
-      { nick: "ZywOo",   flag: "🇫🇷", role: "AWPer",   rating: "1.32" },
-      { nick: "NiKo",    flag: "🇧🇦", role: "Rifler",  rating: "1.28" },
-      { nick: "huNter-", flag: "🇧🇦", role: "Rifler",  rating: "1.15" },
-      { nick: "HooXi",   flag: "🇩🇰", role: "IGL",     rating: "1.01" },
-      { nick: "Snax",    flag: "🇵🇱", role: "Support", rating: "1.08" },
+      { nick: "ZywOo", flag: "🇫🇷", role: "AWPer", rating: "1.32" },
+      { nick: "NiKo", flag: "🇧🇦", role: "Rifler", rating: "1.28" },
+      { nick: "huNter-", flag: "🇧🇦", role: "Rifler", rating: "1.15" },
+      { nick: "HooXi", flag: "🇩🇰", role: "IGL", rating: "1.01" },
+      { nick: "Snax", flag: "🇵🇱", role: "Support", rating: "1.08" },
     ]
   },
   vitality: {
     name: "Team Vitality", flag: "🇫🇷", country: "Франція", founded: 2013,
     firstCaptain: "apEX (Дан Мадесклер)",
     currentCaptain: "apEX (залишається капітаном)",
+    top: 152,
     medals: [
-      { icon: "🏆", label: "BLAST Premier 2023",  type: "gold" },
-      { icon: "🥈", label: "IEM Cologne 2023",    type: "silver" },
-      { icon: "🥉", label: "ESL Pro League S17",  type: "bronze" },
+      { icon: "🏆", label: "BLAST Premier 2023", type: "gold" },
+      { icon: "🥈", label: "IEM Cologne 2023", type: "silver" },
+      { icon: "🥉", label: "ESL Pro League S17", type: "bronze" },
     ],
     players: [
-      { nick: "ZywOo",   flag: "🇫🇷", role: "AWPer",   rating: "1.35" },
-      { nick: "apEX",    flag: "🇫🇷", role: "IGL",     rating: "1.05" },
-      { nick: "dupreeh", flag: "🇩🇰", role: "Rifler",  rating: "1.12" },
-      { nick: "magisk",  flag: "🇩🇰", role: "Support", rating: "1.10" },
-      { nick: "Spinx",   flag: "🇮🇱", role: "Rifler",  rating: "1.18" },
+      { nick: "ZywOo", flag: "🇫🇷", role: "AWPer", rating: "1.35" },
+      { nick: "apEX", flag: "🇫🇷", role: "IGL", rating: "1.05" },
+      { nick: "dupreeh", flag: "🇩🇰", role: "Rifler", rating: "1.12" },
+      { nick: "magisk", flag: "🇩🇰", role: "Support", rating: "1.10" },
+      { nick: "Spinx", flag: "🇮🇱", role: "Rifler", rating: "1.18" },
     ]
   },
   mouz: {
     name: "MOUZ", flag: "🇩🇪", country: "Німеччина", founded: 2002,
     firstCaptain: "gob b (Фатіх Дайік)",
     currentCaptain: "xertioN (Доріан Берман)",
+    top: 72,
     medals: [
-      { icon: "🏆", label: "IEM Sydney 2019",     type: "gold" },
-      { icon: "🥈", label: "ESL Cologne 2019",    type: "silver" },
-      { icon: "🥉", label: "BLAST Spring 2024",   type: "bronze" },
+      { icon: "🏆", label: "IEM Sydney 2019", type: "gold" },
+      { icon: "🥈", label: "ESL Cologne 2019", type: "silver" },
+      { icon: "🥉", label: "BLAST Spring 2024", type: "bronze" },
     ],
     players: [
-      { nick: "xertioN",  flag: "🇩🇪", role: "IGL/Rifler", rating: "1.15" },
-      { nick: "torzsi",   flag: "🇭🇺", role: "AWPer",      rating: "1.20" },
-      { nick: "Jimpphat", flag: "🇫🇮", role: "Rifler",     rating: "1.18" },
-      { nick: "Brollan",  flag: "🇸🇪", role: "Rifler",     rating: "1.14" },
-      { nick: "siuhy",    flag: "🇩🇰", role: "Support",    rating: "1.08" },
+      { nick: "xertioN", flag: "🇩🇪", role: "IGL/Rifler", rating: "1.15" },
+      { nick: "torzsi", flag: "🇭🇺", role: "AWPer", rating: "1.20" },
+      { nick: "Jimpphat", flag: "🇫🇮", role: "Rifler", rating: "1.18" },
+      { nick: "Brollan", flag: "🇸🇪", role: "Rifler", rating: "1.14" },
+      { nick: "siuhy", flag: "🇩🇰", role: "Support", rating: "1.08" },
     ]
   }
 };
@@ -144,3 +150,32 @@ function selectTeam(id, btn) {
     </div>
   `;
 }
+
+
+
+const ctx = document.getElementById('myLocalChart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: [teams.navi.title, teams.faze.name, teams.g2.name, teams.vitality.name, teams.mouz.name,],
+    datasets: [{
+      label: 'Weeks in top30 for core teams',
+      data: [teams.navi.top, teams.faze.top, teams.g2.top, teams.vitality.top, teams.mouz.top],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 205, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)'
+      ],
+      borderColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(153, 102, 255)'
+      ],
+      borderWidth: 1
+    }]
+  }
+})
