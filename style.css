@@ -358,3 +358,179 @@ footer {
   .detail-body { grid-template-columns: 1fr; }
   .detail-name { font-size: 26px; }
 }
+
+
+/* ===== ПРОМО-КАРТКА ЗБРОЇ (на головній) ===== */
+.weapons-promo {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 24px;
+}
+
+.weapons-promo-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px 32px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color .18s, transform .15s, background .18s;
+}
+
+.weapons-promo-card:hover {
+  border-color: var(--gold);
+  background: var(--surface2);
+  transform: translateY(-2px);
+}
+
+.weapons-promo-icon { font-size: 48px; flex-shrink: 0; }
+
+.weapons-promo-text { flex: 1; }
+
+.weapons-promo-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.weapons-promo-title span { color: var(--gold); }
+
+.weapons-promo-desc {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.weapons-promo-arrow {
+  font-size: 28px;
+  color: var(--gold);
+  transition: transform .18s;
+}
+.weapons-promo-card:hover .weapons-promo-arrow {
+  transform: translateX(6px);
+}
+
+/* ===== СТОРІНКА ЗБРОЇ (weapons.html) ===== */
+.weapons-hero {
+  position: relative;
+  z-index: 1;
+  padding: 60px 40px 20px;
+  text-align: center;
+}
+.weapons-hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(40px, 7vw, 72px);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.weapons-hero h1 em {
+  font-style: normal;
+  color: var(--gold);
+  -webkit-text-stroke: 1px var(--gold2);
+}
+.weapons-hero p {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.weapons-main {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.weapons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.weapon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 22px 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .12s, border-color .12s, background .12s;
+}
+.weapon-btn:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.weapon-btn.firing {
+  background: rgba(245,200,66,.15);
+  border-color: var(--gold);
+  transform: scale(0.96);
+}
+
+.weapon-icon { font-size: 32px; }
+
+.weapon-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: .5px;
+  color: var(--text);
+}
+
+.weapon-tag {
+  font-size: 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: var(--bg);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  border-radius: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s, transform .15s;
+}
+.back-btn:hover {
+  background: rgba(245,200,66,.1);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .weapons-promo { padding: 0 16px; }
+  .weapons-promo-card { flex-direction: column; text-align: center; gap: 12px; padding: 24px; }
+  .weapons-promo-arrow { display: none; }
+
+  .weapons-hero { padding: 40px 20px 16px; }
+  .weapons-main { padding: 0 16px 60px; }
+}
+
+
